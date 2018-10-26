@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Task App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <!--NAVIGATION-->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a href="#" class="navbar-brand">Task App</a> 
+        </div>
+    </nav>
+
+    <!--MAIN CONTENT-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 pt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="formTask">
+                            <div class="form-group">
+                                <input type="text" id="title" placeholder="Add A To Do" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="description" cols="80" rows="8" class="form-control" placeholder="Add a Description"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Save
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 pt-5">
+                <div id="tasks">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
